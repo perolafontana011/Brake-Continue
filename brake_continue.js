@@ -1,8 +1,8 @@
 let carros_estacionados = 0;
-const limitemaximo = 4;
+const limitemaximo = 7;
 console.log("---Iniciando verificação de vagas---")
 for (let vaga = 1; vaga <= 10; vaga ++ ){
-    if(vaga === 4 || vaga === 7){
+    if(vaga === 4 || vaga === 7 || vaga === 3){
         console.log(`Vaga ${vaga}: [Interditada]-Pulando...`);
         continue;
     }
@@ -13,4 +13,5 @@ for (let vaga = 1; vaga <= 10; vaga ++ ){
         break;
     }
 }
+
 console.log("Relatório final: Operação de entrada encerrada");
